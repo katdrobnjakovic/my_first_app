@@ -1,0 +1,64 @@
+/* Layout Styling */
+body {
+
+	margin: 0; /*default rails padding around boarder*/
+	background: #222222;
+}
+
+.container {
+
+	width:960px;
+	
+	/*margin:0 auto 0 auto; specify all four arguments at once*/
+	margin: 0 auto; /*specify top and bottom and then right and left - allows to center the container*/
+
+	
+}
+
+/* Header Styling */
+.header {
+
+	background: #bde3ff;
+	color:white;
+}
+
+/* Navigation Styling */
+.navigation {
+	background: black;
+	color:white;
+}
+
+.nav-link {
+	display:inline-block;
+	padding:10px 15px;
+	text-decoration:none;
+	margin-right: 15px;
+	color:white; 
+
+	&:hover {
+		background:#ccc;
+		color:black;
+	}
+
+	&:visited {
+		color:white;
+	}
+
+}
+
+/* Content Styling */
+.content {
+
+	background: #ffffff;
+	h1 {
+		margin-top: 0;
+
+	}
+}
+
+/* Footer Styling */
+.footer {
+
+	background: #333333;
+	color:white;
+}

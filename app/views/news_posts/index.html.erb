@@ -1,0 +1,16 @@
+<h1>All News</h1>
+<p>
+	Welcome to the news section og my site. Here you'll find all the latest and greatest talk about me!
+	<!--   <%=  %>     -->
+	<!-- equals sign in above line means "evaluate and
+	display to page" --> 
+
+</p>
+
+<%= link_to "Add New News Posts", new_news_post_path %>
+
+<ul>
+
+	<%= render @news_posts %>
+
+</ul>
