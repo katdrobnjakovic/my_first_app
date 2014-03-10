@@ -1,5 +1,6 @@
-class NewsPostsController < ApplicationController
+ class NewsPostsController < ApplicationController
   
+  before_action :deny_access_for_non_admins, except:[:index,:show] #can use the keyword only to do the opposite
 
   def index
   	@news_posts = NewsPost.all #variables with an @ are instance variables
