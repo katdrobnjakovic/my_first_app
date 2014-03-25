@@ -10,7 +10,7 @@ class PagesController < ApplicationController
 			message = params['message']
 
 			UserMailer.contact_confirmation(email, first_name, last_name, message).deliver
-			AdminMailer.visitor_contact(...).deliver
+			#AdminMailer.visitor_contact(...).deliver
 			@success = true
 
 		end
